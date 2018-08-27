@@ -1,0 +1,151 @@
+
+cd Smith_228819_20160727
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+
+cd Smith_228847_20160729
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+
+cd Smith_228918_20160808
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+
+cd Smith_229019_20160817
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+
+cd Smith_229181_20160907
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+
+cd Smith_229205_20160912
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+cd Smith_229324_20160927
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+
+cd Smith_229817_20161028
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+
+cd Smith_230805_20170223
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+cd Smith_231108_20170403
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+cd Smith_231152_20170406
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..	
+
+
+cd Smith_228823_20160727
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..	
+
+cd Smith_228849_20160729
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+	
+
+cd Smith_228937_20160810
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+
+cd ..
+
+cd Smith_229175_20160912
+
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+
+cd ..
+
+
+
+cd Smith_229186_20160908
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+cd ..
+
+
+cd Smith_229219_20160913
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+
+cd ..
+
+cd Smith_229790_20161028
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+
+cd ..
+
+
+
+cd Smith_229891_20161103
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+
+cd ..
+
+cd Smith_230870_20170302
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+
+cd ..
+
+cd Smith_231138_20170405
+
+
+cat /Volumes/GRAID/SpinalCord/Step6.m | matlab -nodesktop -nosplash
+
+
+cd ..
+	

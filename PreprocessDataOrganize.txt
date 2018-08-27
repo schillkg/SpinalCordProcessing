@@ -1,0 +1,94 @@
+# find all that have NODDI and copy
+
+cp -r ./Smith_215615_20150610 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_216158_20150806 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_216664_20150929 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_216755_20151012 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_228819_20160727 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_228823_20160727 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_228847_20160729 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_228849_20160729 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_228918_20160808 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_228937_20160810 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_228967_20160810 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229019_20160817 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229148_20160830 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229175_20160912 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229181_20160907 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229186_20160908 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229205_20160912 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229219_20160913 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229324_20160927 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229361_20161003 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229422_20161012 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229790_20161028 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229817_20161028 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229819_20161028 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_229891_20161103 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_230805_20170223 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_230870_20170302 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_231108_20170403 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_231138_20170405 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_231147_20170413 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_231152_20170406 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_231176_20170411 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_231232_20170419 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_232327_20170823 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_232506_20170929 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_232799 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_233462 /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_233564_20180129  /Volumes/GRAID/SpinalCord/
+cp -r ./Smith_233952_20180315  /Volumes/GRAID/SpinalCord/
+
+% delete all files not matching NODDI or mFFE
+find . -maxdepth 3 ! -name '*NODDI*' ! -name '*mFFE*_3*' -type f -exec rm -v {} +
+
+#/Volumes/Macintosh\ HD/Applications/MRIcroGL/dcm2niix -m y -f %n__%d__%p__%s -o /Volumes/GRAID/SpinalCord/Smith_215615_20150610/ #/Volumes/GRAID/SpinalCord/Smith_215615_20150610/Smith_215615_WIP_ZOOM_NODDI-first_shell_SENSE_6_1.PAR
+
+% go through, convert to NIFTI
+
+for d in */ ; do
+    echo "$d"
+	cd $d  
+	
+	for i in $(find . -iname '*PAR'); do
+		echo $i;
+		if [[ $i == *"PAR" ]]; then
+			/Volumes/Macintosh\ HD/Applications/MRIcroGL/dcm2niix -m y -f %n__%d__%p__%s -o ./ $i
+			fi
+	done
+
+	rm -rf *.PAR
+	rm -rf *.REC
+	
+	cd ..
+	
+done
+
+% manually go through, rename
+mFFE.nii and mFFE.json
+NODDI_low.nii, NODDI_low.bval, NODDI_low.bvec, NODDI_low.json
+NODDI_high.nii, NODDI_high.bval, NODDI_high.bvec, NODDI_high.json
+
+i=Smith_231152exporttool4.2____WIPmFFE0.654.2__3
+j=Smith_231152exporttool4.2____WIPNODDI3_b711tool4.2__13
+k=Smith_231152exporttool4.2____WIPNODDI3_b2855tool4.2__14
+mv $i.json mFFE.json
+mv $i.nii mFFE.nii
+
+mv $j.bval NODDI_low.bval
+mv $j.bvec NODDI_low.bvec
+mv $j.nii NODDI_low.nii
+mv $j.json NODDI_low.json
+
+mv $k.bval NODDI_high.bval
+mv $k.bvec NODDI_high.bvec
+mv $k.nii NODDI_high.nii
+mv $k.json NODDI_high.json
+
+
+
+
+
+
+

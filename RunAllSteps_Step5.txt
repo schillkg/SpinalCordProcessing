@@ -1,0 +1,183 @@
+
+cd Smith_228819_20160727
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+cd ..
+
+
+cd Smith_228847_20160729
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+cd ..
+
+
+cd Smith_228918_20160808
+
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+cd ..
+
+
+cd Smith_229019_20160817
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+cd ..
+
+
+cd Smith_229181_20160907
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+cd ..
+
+
+cd Smith_229205_20160912
+
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+cd ..
+
+cd Smith_229324_20160927
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+cd ..
+
+
+
+cd Smith_229817_20161028
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..
+
+
+
+
+
+cd Smith_230805_20170223
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..
+
+
+
+
+
+cd Smith_231108_20170403
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..
+
+	
+
+cd Smith_231152_20170406
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..	
+
+	
+
+cd Smith_228823_20160727
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..	
+
+	
+
+cd Smith_228849_20160729
+
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..	
+
+	
+
+cd Smith_228937_20160810
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..	
+
+	
+
+cd Smith_229175_20160912
+
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..	
+
+	
+
+cd Smith_229186_20160908
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+cd ..	
+
+		
+
+cd Smith_229219_20160913
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..	
+
+		
+
+cd Smith_229790_20161028
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..	
+
+		
+
+
+
+cd Smith_229891_20161103
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..	
+		
+		
+cd Smith_230870_20170302
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..	
+		
+
+cd Smith_231138_20170405
+
+
+sh /Volumes/GRAID/SpinalCord/Step5.sh
+
+
+cd ..	
+		
+	
