@@ -1,0 +1,46 @@
+# copy entire “patients”
+# delete lumbar, others that don’t match
+# go through, delete all files not matching NODDI or mFFE
+find . -maxdepth 3 ! -name '*NODDI*' ! -name '*mFFE*_3*' -type f -exec rm -v {} +
+
+# delete folders that don’t have any noddi at this point
+
+# go through, convert to NIFTI
+for d in */ ; do
+    echo "$d"
+	cd $d  
+	
+	for i in $(find . -iname '*PAR'); do
+		echo $i;
+		if [[ $i == *"PAR" ]]; then
+			/Volumes/Macintosh\ HD/Applications/MRIcroGL/dcm2niix -m y -f %n__%d__%p__%s -o ./ $i
+			fi
+	done
+
+	rm -rf *.PAR
+	rm -rf *.REC
+	
+	cd ..
+	
+done
+
+# manually go through, rename
+# mFFE.nii and mFFE.json
+# NODDI_low.nii, NODDI_low.bval, NODDI_low.bvec, NODDI_low.json
+# NODDI_high.nii, NODDI_high.bval, NODDI_high.bvec, NODDI_high.json
+
+i=Smith_231152exporttool4.2____WIPmFFE0.654.2__3
+j=Smith_231152exporttool4.2____WIPNODDI3_b711tool4.2__13
+k=Smith_231152exporttool4.2____WIPNODDI3_b2855tool4.2__14
+mv $i.json mFFE.json
+mv $i.nii mFFE.nii
+
+mv $j.bval NODDI_low.bval
+mv $j.bvec NODDI_low.bvec
+mv $j.nii NODDI_low.nii
+mv $j.json NODDI_low.json
+
+mv $k.bval NODDI_high.bval
+mv $k.bvec NODDI_high.bvec
+mv $k.nii NODDI_high.nii
+mv $k.json NODDI_high.json
