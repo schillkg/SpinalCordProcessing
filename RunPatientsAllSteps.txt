@@ -1,0 +1,15 @@
+cd Smith_216158_20150806
+cat /Volumes/schillkg/SchillingScripts/Step1.m | matlab -nodesktop -nosplash
+sh /Volumes/schillkg/SchillingScripts/SpinalCord_Scripts/Step2.sh
+cat /Volumes/schillkg/SchillingScripts/Step3.m | matlab -nodesktop -nosplash
+cat /Volumes/schillkg/SchillingScripts/Step4.m | matlab -nodesktop -nosplash
+sh /Volumes/schillkg/SchillingScripts/SpinalCord_Scripts/Step5.sh
+cat /Volumes/schillkg/SchillingScripts/Step6.m | matlab -nodesktop -nosplash
+cat /Volumes/schillkg/SchillingScripts/Step7_showDTISMTNODDI.m | matlab -nodesktop -nosplash
+cd ..
+
+
+
+
+
+

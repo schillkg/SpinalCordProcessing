@@ -1,4 +1,7 @@
 #!/bin/bash
+# just in case average over time
+sct_maths -i mFFE.nii -mean t -o mFFE.nii
+
 # Spinal cord segmentation on T2
 sct_deepseg_sc -i mFFE.nii -c t2s
 # makes mFFE_seg.nii
